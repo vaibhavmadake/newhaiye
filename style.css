@@ -60,6 +60,34 @@
     border-radius: 50%;
 }
 
+.grey{
+  background-color: rgba(141, 140, 137, 0.418);
+    border-radius: 50%;
+}
+.pink{
+  background-color: pink;
+    border-radius: 50%;
+}
+.blue{
+  background-color: rgb(107, 107, 247);
+    border-radius: 50%;
+}
+.orange{
+  background-color: rgba(250, 124, 40, 0.945);
+    border-radius: 50%;
+}
+.brown{
+  background-color: rgba(219, 204, 154, 0.815);
+    border-radius: 50%;
+}
+.white{
+  background-color: rgb(252, 249, 243);
+    border-radius: 50%;
+}
+.black{
+background-color: rgb(77, 75, 75);
+    border-radius: 50%;
+
 
 /***********/
 
