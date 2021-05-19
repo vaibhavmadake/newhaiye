@@ -87,7 +87,7 @@
 .black{
 background-color: rgb(77, 75, 75);
     border-radius: 50%;
-
+}
 
 /***********/
 
@@ -214,5 +214,19 @@ background-color: rgb(77, 75, 75);
 
 }
 
-/**********/
+/*****  Cart button rate  *****/
 
+h2.p5:hover span {display:none}
+h2.p5:hover:before {content:"₹ 599"}
+
+h2.p6:hover span {display:none}
+h2.p6:hover:before {content:"₹ 699"}
+
+h2.p7:hover span {display:none}
+h2.p7:hover:before {content:"₹ 799"}
+
+h2.p8:hover span {display:none}
+h2.p8:hover:before {content:"₹ 899"}
+
+h2.p9:hover span {display:none}
+h2.p9:hover:before {content:"₹ 999"}
