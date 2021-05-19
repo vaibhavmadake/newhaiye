@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+body{
+	background: #f8f8f8;
+	padding: 0;
+	margin: 0;
+	font-family: DM Sans;
+}
+.nav{
+	display: flex;
+	padding: 2rem 0.8rem;
+	background: rgb(255, 197, 8);
+	justify-content: space-between;
+	align-items:center;
+	
+	& .select {
+		position: relative;
+		& a{
+			padding: 8px 16px;
+			width: 150px;
+			border: none;
+			border-radius: 10px;
+			text-decoration: none;
+			background: rgba(255, 42, 42, 0.979);
+			color: #1E0E62;
+			font-weight: 600;
+			font-size: 16px;
+			display: block;
+			transition: all 0.25s;
+			&:before{
+				font-family: "Font Awesome 5 Free"; 
+				font-weight: 900; 
+				content: "\f078";
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				color: #1E0E62;
+			}
+			&:after{
+				content: none;
+			}
+		}
+		& .dropdown-menu{
+		position: absolute;
+		top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: right;
+    min-width: 15rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1.345rem;
+    color: #368019;
+    text-align: center;
+    list-style: none;
+		padding: 8px 16px;
+		background: rgb(208, 218, 166);
+		margin-top: 10px;
+		border-radius: 10px;
+		box-shadow: rgba(0, 0, 0, 0.05) -3px 3px 6px, rgba(0, 0, 0, 0.055) -20px 20px 55px, rgba(255, 255, 255, 0.6) -2px 2px 2px 1px inset, rgba(255, 255, 255, 0.4) 2px 2px 3px 0px inset, rgba(0, 0, 0, 0.05) 1px 1px 2px 0px inset;
+		display:none;
+		transition: .25s opacity;
+			&.active{
+				display: block;
+			}
+			& div{
+				margin-bottom: 1em;
+    font-weight: 600;
+    color: #620e42;
+    cursor: pointer;
+    padding: 16px;
+    border-bottom: 2px solid #1e0e6269;
+			}
+		}
+	}
+	
+	& .logo{
+		height: 80px;
+		width: 80px;
+		margin-right: 85px;
+		text-align: center;
+		position: relative;
+		
+		& svg{
+			height: 80px;
+			width: 80px;
+		}
+	}
+	
+	& .login{
+		position: relative;
+		& button{
+			display: inline-block;
+			height: 40px;
+    	padding: 0 15px;
+			user-select: none;
+			background: rgba(255, 42, 42, 0.979);
+			border: 2px solid #EBEAED;
+			line-height: 36px;
+			color: #1E0E62;
+			font-size: 16px;
+			vertical-align: top;
+			border-radius: 50px;
+			font-weight: 600;
+			text-align: center;
+    	background: transparent;
+			transition: .25s all;
+			cursor: pointer;
+			
+			&:focus{
+				outline: none;
+			}
+			&:hover{
+				border-color: #1E0E62;
+			}
+		}
+	}
+}

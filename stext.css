@@ -1,0 +1,52 @@
+/* 
+	Weight axis: 100 – 700
+	Width axis: 85 – 100
+*/
+@font-face {
+	font-family: "IBM Plex Sans Roman";
+	src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/85648/IBMPlexSansVar-Roman.ttf");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+h5 {
+	font-weight: 100;
+	font-size: 3vw;
+	line-height: 7vw;
+	font-variation-settings: 'wght' 100, 'wdth' 85;
+	font-family: "IBM Plex Sans Roman", Times;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #DCEDC8;
+}
+
+h5 .char {
+	--delay: calc((var(--char-index) + 1) * 100ms);
+	animation: breathe 8000ms infinite both;
+	animation-delay: var(--delay);
+}
+
+h5:hover span {
+	animation-play-state: paused;
+}
+
+@keyframes breathe {
+	0% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+		font-size: 4vw;
+	}
+	50% {
+		font-variation-settings: 'wght' 700, 'wdth' 100;
+		font-size: 5vw;
+	}
+	
+	100% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+		font-size: 4vw;
+	}
+}

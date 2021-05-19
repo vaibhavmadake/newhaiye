@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans&display=swap");
+body {
+  background: #f8f8f8;
+  padding: 0;
+  margin: 0;
+  font-family: DM Sans;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0.8rem;
+  background: #ffc508;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .select {
+  position: relative;
+}
+
+.nav .select a {
+  padding: 8px 16px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  background: rgba(255, 42, 42, 0.979);
+  color: #1E0E62;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.nav .select a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #1E0E62;
+}
+
+.nav .select a:after {
+  content: none;
+}
+
+.nav .select .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: right;
+  min-width: 15rem;
+  padding: .5rem 0;
+  margin: .125rem 0 0;
+  font-size: 1.345rem;
+  color: #368019;
+  text-align: center;
+  list-style: none;
+  padding: 8px 16px;
+  background: #d0daa6;
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) -3px 3px 6px, rgba(0, 0, 0, 0.055) -20px 20px 55px, rgba(255, 255, 255, 0.6) -2px 2px 2px 1px inset, rgba(255, 255, 255, 0.4) 2px 2px 3px 0px inset, rgba(0, 0, 0, 0.05) 1px 1px 2px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.05) -3px 3px 6px, rgba(0, 0, 0, 0.055) -20px 20px 55px, rgba(255, 255, 255, 0.6) -2px 2px 2px 1px inset, rgba(255, 255, 255, 0.4) 2px 2px 3px 0px inset, rgba(0, 0, 0, 0.05) 1px 1px 2px 0px inset;
+  display: none;
+  -webkit-transition: .25s opacity;
+  transition: .25s opacity;
+}
+
+.nav .select .dropdown-menu.active {
+  display: block;
+}
+
+.nav .select .dropdown-menu div {
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #620e42;
+  cursor: pointer;
+  padding: 16px;
+  border-bottom: 2px solid #1e0e6269;
+}
+
+.nav .logo {
+  height: 80px;
+  width: 80px;
+  margin-right: 85px;
+  text-align: center;
+  position: relative;
+}
+
+.nav .logo svg {
+  height: 80px;
+  width: 80px;
+}
+
+.nav .login {
+  position: relative;
+}
+
+.nav .login button {
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: rgba(255, 42, 42, 0.979);
+  border: 2px solid #EBEAED;
+  line-height: 36px;
+  color: #1E0E62;
+  font-size: 16px;
+  vertical-align: top;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+  background: transparent;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+  cursor: pointer;
+}
+
+.nav .login button:focus {
+  outline: none;
+}
+
+.nav .login button:hover {
+  border-color: #1E0E62;
+}
+/*# sourceMappingURL=nav.css.map */
