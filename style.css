@@ -60,6 +60,34 @@
     border-radius: 50%;
 }
 
+.grey{
+  background-color: rgba(141, 140, 137, 0.418);
+    border-radius: 50%;
+}
+.pink{
+  background-color: pink;
+    border-radius: 50%;
+}
+.blue{
+  background-color: rgb(107, 107, 247);
+    border-radius: 50%;
+}
+.orange{
+  background-color: rgba(250, 124, 40, 0.945);
+    border-radius: 50%;
+}
+.brown{
+  background-color: rgba(219, 204, 154, 0.815);
+    border-radius: 50%;
+}
+.white{
+  background-color: rgb(252, 249, 243);
+    border-radius: 50%;
+}
+.black{
+background-color: rgb(77, 75, 75);
+    border-radius: 50%;
+}
 
 /***********/
 
@@ -186,5 +214,19 @@
 
 }
 
-/**********/
+/*****  Cart button rate  *****/
 
+h2.p5:hover span {display:none}
+h2.p5:hover:before {content:"₹ 599"}
+
+h2.p6:hover span {display:none}
+h2.p6:hover:before {content:"₹ 699"}
+
+h2.p7:hover span {display:none}
+h2.p7:hover:before {content:"₹ 799"}
+
+h2.p8:hover span {display:none}
+h2.p8:hover:before {content:"₹ 899"}
+
+h2.p9:hover span {display:none}
+h2.p9:hover:before {content:"₹ 999"}
